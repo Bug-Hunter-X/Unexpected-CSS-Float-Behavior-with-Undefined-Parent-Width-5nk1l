@@ -1,0 +1,13 @@
+The following CSS code demonstrates a solution using flexbox to avoid the issue of floats with undefined parent width:
+
+```css
+.container {
+  display: flex;
+}
+
+div {
+  width: 50%;
+}
+```
+
+This code uses flexbox which provides a more robust and predictable layout mechanism, resolving the issue that can occur with floating elements when the parent's width is not explicitly specified.  This approach eliminates the need for floats and handles the layout more consistently across different browsers and contexts.  Alternative solutions include explicitly setting the width of the parent element, but this might not be as flexible as using Flexbox or Grid.
