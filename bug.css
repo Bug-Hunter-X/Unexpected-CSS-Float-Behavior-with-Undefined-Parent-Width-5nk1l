@@ -1,0 +1,12 @@
+The following CSS code results in unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This code snippet intends to make the `div` elements take up 50% of the available width and float them left. However, if the parent element does not have a defined width, the floats might not behave as expected, and the layout may become unpredictable.
+
+The issue arises because floating elements only consider the width of their parent container if the parent container's width is explicitly set.  Without a defined width on the parent, the floats might collapse, leading to unexpected positioning and rendering.
